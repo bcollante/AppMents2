@@ -9,6 +9,8 @@ import androidx.navigation.fragment.NavHostFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,7 +18,15 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class FourthFragment extends Fragment {
-
+    private int c1=1;
+    private int c2=1;
+    private int c3=1;
+    private int c4=1;
+    private int c5=1;
+    private int c6=1;
+    private int c7=1;
+    private int c8=1;
+    private int total;
 
     @Override
     public View onCreateView(
@@ -44,6 +54,169 @@ public class FourthFragment extends Fragment {
             }
         });
 
+        final TextView cantidadnum=view.findViewById(R.id.cuenta3);
+        final SeekBar cuenta1=view.findViewById(R.id.seekbarP31);
+        final SeekBar cuenta2=view.findViewById(R.id.seekbarP32);
+        final SeekBar cuenta3=view.findViewById(R.id.seekbarP33);
+        final SeekBar cuenta4=view.findViewById(R.id.seekbarP34);
+        final SeekBar cuenta5=view.findViewById(R.id.seekbarP35);
+        final SeekBar cuenta6=view.findViewById(R.id.seekbarP36);
+        final SeekBar cuenta7=view.findViewById(R.id.seekbarP37);
+        final SeekBar cuenta8=view.findViewById(R.id.seekbarP38);
+        cuenta1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                c1=i+1;
+                total=c1+c2+c3+c4+c5+c6+c7+c8;
+                cantidadnum.setText("score: "+total);
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        cuenta2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                c2=i+1;
+                total=c1+c2+c3+c4+c5+c6+c7+c8;
+                cantidadnum.setText("score: "+total);
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        cuenta3.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                c3=i+1;
+                total=c1+c2+c3+c4+c5+c6+c7+c8;
+                cantidadnum.setText("score: "+total);
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        cuenta4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                c4=i+1;
+                total=c1+c2+c3+c4+c5+c6+c7+c8;
+                cantidadnum.setText("score: "+total);
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        cuenta5.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                c5=i+1;
+                total=c1+c2+c3+c4+c5+c6+c7+c8;
+                cantidadnum.setText("score: "+total);
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        cuenta6.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                c6=i+1;
+                total=c1+c2+c3+c4+c5+c6+c7+c8;
+                cantidadnum.setText("score: "+total);
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        cuenta7.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                c7=i+1;
+                total=c1+c2+c3+c4+c5+c6+c7+c8;
+                cantidadnum.setText("score: "+total);
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        cuenta8.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                c8=i+1;
+                total=c1+c2+c3+c4+c5+c6+c7+c8;
+                cantidadnum.setText("score: "+total);
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
+
 
 }

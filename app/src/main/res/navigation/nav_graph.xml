@@ -56,6 +56,17 @@
             />
         <action
             android:id="@+id/action_FinalResult"
+            app:destination="@id/FifthFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/FifthFragment"
+        android:name="com.example.appments.FifthFragment"
+        android:label="Fifth Fragment"
+        tools:layout="@layout/fragment_fifth">
+
+        <action
+            android:id="@+id/action_Tryagain"
             app:destination="@id/FirstFragment"
             />
     </fragment>
