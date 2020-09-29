@@ -40,6 +40,14 @@ public class FifthFragment extends Fragment {
                         .navigate(R.id.action_Tryagain);
             }
         });
+        view.findViewById(R.id.calcularbot).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+
+            }
+
+
+        });
     }
     /**
      * Use this factory method to create a new instance of
