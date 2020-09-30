@@ -128,8 +128,11 @@
         android:id="@+id/titulo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="536dp"
+        android:layout_marginBottom="628dp"
         android:text="@string/Titulo_P4"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -217,10 +220,10 @@
         android:text="   1       2      3       4      5"
         app:layout_constraintBottom_toTopOf="@+id/seekbarP31"
         app:layout_constraintEnd_toEndOf="@+id/seekbarP31"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="@+id/seekbarP31"
         app:layout_constraintTop_toBottomOf="@+id/titulo2"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintVertical_bias="0.79" />
 
     <Button
         android:id="@+id/button4_finalizar"
@@ -241,4 +244,15 @@
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/edad_i"
+        android:layout_width="41dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="120dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintStart_toEndOf="@+id/text21"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

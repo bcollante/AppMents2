@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -51,6 +52,14 @@ public class FourthFragment extends Fragment {
             public void onClick(View view) {
                 NavHostFragment.findNavController(FourthFragment.this)
                         .navigate(R.id.action_FinalResult);
+            }
+        });
+
+        view.findViewById(R.id.edad_i).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast myToast = Toast.makeText(getActivity(), "1: <20, 2:21-40, 3:41-50, 4:51_65, 5:>65 ", Toast.LENGTH_LONG);
+                myToast.show();
             }
         });
 
