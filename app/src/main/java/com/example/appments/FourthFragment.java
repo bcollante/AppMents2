@@ -55,6 +55,7 @@ public class FourthFragment extends Fragment {
         });
 
         final TextView cantidadnum=view.findViewById(R.id.cuenta3);
+
         final SeekBar cuenta1=view.findViewById(R.id.seekbarP31);
         final SeekBar cuenta2=view.findViewById(R.id.seekbarP32);
         final SeekBar cuenta3=view.findViewById(R.id.seekbarP33);
